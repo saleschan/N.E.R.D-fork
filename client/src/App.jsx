@@ -6,6 +6,7 @@ import SingUp from './pages/Singup'
 import './global.css'
 import { ThemeProvider } from '@mui/material'
 import { authTheme } from './themes/authTheme'
+import Overview from './pages/Overview'
 
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
           <Route element={<Login />} path="/" exact />
           <Route element={<Home />} path="home" />
           <Route element={<SingUp />} path='cadastro0' />
+          <Route element={<Overview />} path='main' />
           <Route path="*" element={<Navigate to='/' />} />
         </Routes>
       </ThemeProvider>
