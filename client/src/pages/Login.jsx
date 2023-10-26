@@ -22,8 +22,6 @@ import {
 import { Layout, Slide } from '../components'
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "../global.css";
-
 export default function Login() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -54,6 +52,7 @@ export default function Login() {
 
   return (
     <Layout>
+      <h1>ola</h1>
       <Box display="flex" justifyContent="space-around" alignItems="center">
         <Box>
           <form>
